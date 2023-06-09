@@ -197,6 +197,33 @@ body{
 /*------------------------------------*/
 /*      INICIO DE RESPONSIVE          */ 
 /*------------------------------------*/
+@media only screen and (max-width: 600px){
+    .header{
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+    .pregunta img{
+        margin-top: 3%;
+        width: 60%;
+        height: 60%;
+    }
+    .nombre img{
+        width: 55%;
+        height: 55%;
+    }
+
+    .instrucciones{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10%;
+
+    
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.60rem;
+    }
+    
+}
 
 
 
