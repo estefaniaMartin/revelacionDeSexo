@@ -14,10 +14,6 @@ body {
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 40px;
     margin-top: 5%;
 }
@@ -72,10 +68,19 @@ body {
 
 .imagenRevelacion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
+.nubeAuri{
+    width: 100%;
+    height: 100%;
+}
+
+.fotoRevelacion{
+    width: 100%;
+    height: 100%;
+}
 
 /*----------------------------------------*/
 /*   INICIO DE ROTAR SIGNO DE PREGUNTA    */
