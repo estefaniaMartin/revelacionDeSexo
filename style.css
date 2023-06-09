@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MiFuente;
+    src:url(Socake.otf);
+    }
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.contenedor{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2%;
+    font-family: MiFuente;
+    font-size: 37px;
+}
+
+.header h1{
+    font-family: MiFuente;
+}
+
+.pregunta img{
+    margin-top: 3%;
+    width: 80%;
+    height: 80%;
+}
+
+.instrucciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.nombre img{
+    width: 70%;
+    height: 70%;
+}
+
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20vw;
+}
+
+#countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+
+
+/*----------------------------------------*/
+/*   INICIO DE ROTAR SIGNO DE PREGUNTA    */ 
+/*----------------------------------------*/
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+.pregunta img{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+/*----------------------------------------*/
+/*     FIN DE ROTAR SIGNO DE PREGUNTA     */ 
+/*----------------------------------------*/
+
+
+
+
+/*------------------------------------*/
+/*       INICIO DE BURBUJAS           */ 
+/*------------------------------------*/
+.burbuja{
+    border-radius: 50%;
+    background-color: pink;
+    opacity: .1;
+    
+    position: absolute;
+    bottom: 0;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(2){
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    left: 15%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(3){
+    width: 80px;
+    height: 80px;
+    left: 30%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(4){
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    left: 40%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.burbuja:nth-child(5){
+    width: 80px;
+    height: 80px;
+    left: 55%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(6){
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(7){
+    width: 80px;
+    height: 80px;
+    left: 80%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.burbuja:nth-child(8){
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+    left: 90%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+/*------------------------------------*/
+/*         FIN DE BURBUJAS            */ 
+/*------------------------------------*/
+
+
+
+/*------------------------------------*/
+/*      INICIO DE RESPONSIVE          */ 
+/*------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------*/
+/*        FIN DE RESPONSIVE           */ 
+/*------------------------------------*/
